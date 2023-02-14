@@ -13,6 +13,9 @@
 		77A822BF299C27250091FF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A822BD299C27250091FF92 /* Main.storyboard */; };
 		77A822C1299C272C0091FF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A822C0299C272C0091FF92 /* Assets.xcassets */; };
 		77A822C4299C272C0091FF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A822C2299C272C0091FF92 /* LaunchScreen.storyboard */; };
+		77A822D0299C279B0091FF92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A822CF299C279B0091FF92 /* User.swift */; };
+		77A822D2299C28060091FF92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A822D1299C28060091FF92 /* ViewModel.swift */; };
+		77A822D5299C285F0091FF92 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A822D4299C285F0091FF92 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		77A822C0299C272C0091FF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A822C3299C272C0091FF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77A822C5299C272C0091FF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A822CF299C279B0091FF92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		77A822D1299C28060091FF92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		77A822D4299C285F0091FF92 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		77A822B6299C27250091FF92 /* MVVM Bindings Practice */ = {
 			isa = PBXGroup;
 			children = (
+				77A822CD299C274B0091FF92 /* ViewModels */,
+				77A822CC299C27430091FF92 /* Views */,
+				77A822CB299C27360091FF92 /* Models */,
 				77A822B7299C27250091FF92 /* AppDelegate.swift */,
 				77A822B9299C27250091FF92 /* SceneDelegate.swift */,
-				77A822BB299C27250091FF92 /* ViewController.swift */,
-				77A822BD299C27250091FF92 /* Main.storyboard */,
 				77A822C0299C272C0091FF92 /* Assets.xcassets */,
-				77A822C2299C272C0091FF92 /* LaunchScreen.storyboard */,
 				77A822C5299C272C0091FF92 /* Info.plist */,
 			);
 			path = "MVVM Bindings Practice";
+			sourceTree = "<group>";
+		};
+		77A822CB299C27360091FF92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77A822CF299C279B0091FF92 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77A822CC299C27430091FF92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77A822BB299C27250091FF92 /* ViewController.swift */,
+				77A822CE299C27550091FF92 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77A822CD299C274B0091FF92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				77A822D3299C28470091FF92 /* Bindings */,
+				77A822D1299C28060091FF92 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		77A822CE299C27550091FF92 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				77A822BD299C27250091FF92 /* Main.storyboard */,
+				77A822C2299C272C0091FF92 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		77A822D3299C28470091FF92 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				77A822D4299C285F0091FF92 /* Dynamic.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A822D2299C28060091FF92 /* ViewModel.swift in Sources */,
+				77A822D0299C279B0091FF92 /* User.swift in Sources */,
 				77A822BC299C27250091FF92 /* ViewController.swift in Sources */,
+				77A822D5299C285F0091FF92 /* Dynamic.swift in Sources */,
 				77A822B8299C27250091FF92 /* AppDelegate.swift in Sources */,
 				77A822BA299C27250091FF92 /* SceneDelegate.swift in Sources */,
 			);
