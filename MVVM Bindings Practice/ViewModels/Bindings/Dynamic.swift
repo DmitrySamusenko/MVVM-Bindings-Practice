@@ -6,7 +6,8 @@
 //
 
 import Foundation
-
+//Вспомогательный класс который занимается (binder)
+//биндингом пользовательского интерфейса и вьюмодели (change statusText -> UI refresh)
 class Dynamic<T> {
     typealias Listener = (T) -> Void
     private var listener: Listener?
@@ -20,8 +21,8 @@ class Dynamic<T> {
             listener?(value)
         }
     }
-    
     init(_ v: T) {
         value = v
     }
+
 }
